@@ -35,18 +35,40 @@ Hardware – PCs, Cyclone II , USB flasher
 
 /* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
 
-Developed by: RegisterNumber:*/
+Developed by: Mohamed athif rahuman J
+RegisterNumber:212223220058
+```
+module ex2(A,B,C,D,F1);
+input A,B,C,D;
+output F1;
+wire x1,x2,x3,x4,x5;
+assign x1=(~A)&(~B)&(~C)&(~D);
+assign x2=(A)&(~C)&(~D);
+assign x3=(~B)&(C)&(~D);
+assign x4=(~A)&(B)&(C)&(D);
+assign x5=(B)&(~C)&(D);
+assign F1=x1|x2|x3|x4|x5;
+endmodule
 
+```
 
 **RTL realization**
 
-**Output:**
+![image](https://github.com/mdathif12/BOOLEAN_FUNCTION_MINIMIZATION/assets/149365313/642a47b1-5e0d-4688-9706-590347b11396)
 
-**RTL**
+
+**Truth table**
+
+![image](https://github.com/mdathif12/BOOLEAN_FUNCTION_MINIMIZATION/assets/149365313/e88f707e-d0b2-443d-8daf-b33aa9b2a483)
+
 
 **Timing Diagram**
 
+![image](https://github.com/mdathif12/BOOLEAN_FUNCTION_MINIMIZATION/assets/149365313/6a92e402-41e5-4a0b-a767-6c920b6145c1)
+
+
 **Result:**
+Thus the given logic functions are implemented using and their operations are verified using Verilog programming.
 
 Thus the given logic functions are implemented using and their operations are verified using Verilog programming.
 
